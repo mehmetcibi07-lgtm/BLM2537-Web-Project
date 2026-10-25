@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgilerinizi Girin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo1.jpg" alt="staj bul app logo" width="75">
+        <h1>Staj Bul</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Ana Sayfa</a></li>
+                <li><a href="internships.html">Güncel imkanlara bir göz atın</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Bilgilerinizi Girin</h2>
+        <form id="notFormu">
+            <p>
+                <label for="bolum">Bölüm</label><br>
+                <input type="text" id="bolum" name="bolum" placeholder="ex. Bilgisayar Mühendisliği" required>
+            </p>
+            <p>
+                <label for="avg">Üniversite Ortalamanız (GANO)</label><br>
+                <input type="number" id="avg" name="average" min="0" max="4" step="0.01" placeholder="ex. 3.25" required>
+            </p>
+            <p>
+                <label for="english_level">İngilizce Seviyeniz</label><br>
+                <select id="english_level" name="english_level" required>
+                    <option value="" disabled selected>Seviyenizi seçin</option>
+                    <option value="A1">A1 - Başlangıç (Beginner)</option>
+                    <option value="A2">A2 - Temel (Elementary)</option>
+                    <option value="B1">B1 - Orta Öncesi (Intermediate)</option>
+                    <option value="B2">B2 - Orta Üstü (Upper-Intermediate)</option>
+                    <option value="C1">C1 - İleri (Advanced)</option>
+                    <option value="C2">C2 - Anadil Düzeyi (Proficient)</option>
+                </select>
+            </p>
+            <p>
+                <label for="dog_tarih">Doğum Tarihiniz</label><br>
+                <input type="date" id="dog_tarih" name="dog_tarih">
+            </p>
+            <p>
+                Cinsiyet :
+                <input type="radio" id="erkek" name="gender" value="male" checked>
+                <label for="erkek">Erkek</label>
+                <input type="radio" id="kadin" name="gender" value="female">
+                <label for="kadin">Kadın</label>
+            </p>
+            <p>
+                <label for="donem">Mezun musunuz?</label><br>
+                <select id="donem" name="donem">
+                    <option value="evet">Evet, mezunum</option>
+                    <option value="hayır">Hayır, mezun değilim</option>
+                </select>
+            </p>
+            <p>
+                <label for="alan">İlgili olduğunuz alanları yazınız</label><br>
+                <textarea id="alan" name="section" rows="4" cols="45"></textarea>
+            </p>
+            <button type="submit">Kaydet</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Staj Bul App &middot; Tüm hakları saklıdır </p>
+    </footer>
+</body>
+</html>

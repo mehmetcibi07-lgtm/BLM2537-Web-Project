@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --birincil-renk: #1b263b;
+    --ikincil-renk: #0077b6;
+    --link-renk: #023e8a;
+    --arka-plan: #f4f6f9;
+    --yazi-renk: #2b2d42;
+    --cizgi-renk: #cbd5e1;
+}
+
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--yazi-renk);
+    background-color: var(--arka-plan);
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: var(--birincil-renk);
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+a {
+    color: var(--link-renk);
+}
+
+a:hover {
+    color: var(--ikincil-renk);
+}
+
+footer {
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 20px;
+}
+
+/* ---------- Tablo İşlemleri ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--cizgi-renk);
+}
+
+th {
+    background-color: var(--birincil-renk);
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--arka-plan);
+}
+
+/* ---------- Form Alanları ---------- */
+input, select, textarea {
+    width: 100%;
+    max-width: 380px;
+    padding: 7px 9px;
+    border: 1px solid var(--cizgi-renk);
+    border-radius: 4px;
+    font: inherit;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid var(--ikincil-renk);
+}
+
+button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--ikincil-renk);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--birincil-renk);
+}
