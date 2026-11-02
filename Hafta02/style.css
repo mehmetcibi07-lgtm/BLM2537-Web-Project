@@ -21,13 +21,12 @@ body {
     background-color: var(--zemin);
 }
 
-/* =========================================
-   ÜST ÇUBUK (HEADER)
-   ========================================= */
+/* ÜST ÇUBUK (HEADER) */
 header {
     background-color: var(--ana-renk);
     padding: 14px 28px;
-    overflow: hidden; /* float temizliği */
+    overflow: hidden;
+    /* float temizleme */
 }
 
 .brand {
@@ -158,7 +157,7 @@ tbody tr:nth-child(even) {
     background-color: #F8FAFC;
 }
 
-/* Tablo satırına gelindiğinde satır parlasın */
+/* Tablo satırına gelindiğinde satır göstergesi */
 tbody tr:hover {
     background-color: #EDF2F7;
 }
@@ -174,7 +173,7 @@ tbody tr:hover {
 }
 
 
-/*FORM ALANLARI*/
+/* FORM ALANLARI */
 .form-satir {
     margin-bottom: 16px;
 }
