@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --ana-renk: #14213D;
+    --vurgu-renk: #FCA311;
+    --baglanti-renk: #1D7066;
+    --zemin: #F2F4F7;
+    --metin: #1F2937;
+    --kenar: #D0D5DD;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--metin);
+    background-color: var(--zemin);
+}
+
+/* ÜST ÇUBUK (HEADER) */
+header {
+    background-color: var(--ana-renk);
+    padding: 14px 28px;
+    overflow: hidden;
+    /* float temizleme */
+}
+
+.brand {
+    float: left;
+}
+
+header img {
+    float: left;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    margin-right: 12px;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    line-height: 36px;
+}
+
+/* Menü */
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 6px;
+}
+
+nav a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 7px 14px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+nav a:hover,
+nav a.aktif {
+    background-color: var(--vurgu-renk);
+    color: var(--ana-renk);
+    font-weight: bold;
+}
+
+main {
+    max-width: 880px;
+    margin: 32px auto;
+    padding: 28px 32px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: var(--ana-renk);
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--zemin);
+    padding-bottom: 8px;
+}
+
+.banner-img {
+    width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+
+/* Bilgi Kutusu / Vurgulu Alan */
+.bilgi-kutu {
+    background-color: #F1F5F9;
+    border-left: 4px solid #14213D;
+    border: 1px #002157;
+    color: #14213D;
+}
+
+
+/* Listeler */
+ul.liste {
+    margin-left: 20px;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+
+
+/*TABLO STİLLERİ*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.05rem;
+    color: var(--ana-renk);
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--kenar);
+}
+
+th {
+    background-color: var(--ana-renk);
+    color: #FFFFFF;
+    font-size: 0.95rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F8FAFC;
+}
+
+/* Tablo satırına gelindiğinde satır göstergesi */
+tbody tr:hover {
+    background-color: #EDF2F7;
+}
+
+/* Kontenjan ve sayı sütunları için rozet efekti */
+.rozet {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    background-color: #E2E8F0;
+    border-radius: 12px;
+}
+
+
+/* FORM ALANLARI */
+.form-satir {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: var(--metin);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    max-width: 420px;
+    padding: 9px 12px;
+    border: 1px solid var(--kenar);
+    border-radius: 6px;
+    font: inherit;
+    background-color: #FAFAFA;
+    transition: 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--vurgu-renk);
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0 3px rgba(252, 163, 17, 0.2);
+}
+
+.secenek-grup {
+    margin-top: 6px;
+}
+
+.secenek-grup label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--vurgu-renk);
+    color: var(--ana-renk);
+    font-weight: bold;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: var(--ana-renk);
+    color: #FFFFFF;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #6B7280;
+    margin: 32px 0 20px 0;
+}
+/* ------------
+
+/* form gonderilince altta cikan profil kutusu */
+.ozet-kart {
+    margin-top: 24px;
+    padding: 20px;
+    background-color: #F8FAFC;
+    border: 2px solid var(--vurgu-renk);
+    border-radius: 8px;
+}
+
+.ozet-kart h3 {
+    color: var(--ana-renk);
+    margin-bottom: 12px;
+}
+
+/* form gonderilince cikan  kutu */
+.ozet-kart {
+    margin-top: 20px;
+    padding: 16px;
+    background-color: var(--zemin);
+    border: 1px solid var(--kenar);
+    border-radius: 6px;
+}
+
+.ozet-kart h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: var(--ana-renk);
+}
+
+.ozet-kart p {
+    margin: 4px 0;
+}
+
+/* ilanlar sayfasindaki takip sayacı kutusu */
+.sayac-paneli {
+    background-color: var(--ana-renk);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+}
+
+/* tablodaki takip butonlari */
+.btn-takip {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    background-color: var(--ana-renk);
+    color: white;
+    border: 1px solid var(--kenar);
+}
+
+.btn-takip:hover {
+    background-color: var(--vurgu-renk);
+    color: var(--ana-renk);
+}
+
+/* tiklaninca bu classi veriyor yesil olsun diye */
+.btn-takip.takipte {
+    background-color: #10B981;
+    color: white;
+}

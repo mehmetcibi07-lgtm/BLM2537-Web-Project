@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgilerinizi Girin - Staj Bul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <img src="logo2.png" alt="Staj Bul Logo">
+            <h1>Staj Bul</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="main.html">Ana Sayfa</a></li>
+                <li><a href="internships.html">Güncel İmkanlar</a></li>
+                <li><a href="info.html" class="aktif">Bilgilerinizi Girin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Aday Profil Bilgileri</h2>
+        <form id="notFormu">
+            <div class="form-satir">
+                <label for="bolum">Bölümünüz</label>
+                <input type="text" id="bolum" name="bolum" placeholder="Örn: Bilgisayar Mühendisliği" required>
+            </div>
+
+            <div class="form-satir">
+                <label for="avg">Genel Not Ortalaması (GANO)</label>
+                <input type="number" id="avg" name="average" min="0" max="4" step="0.01" placeholder="Örn: 3.25" required>
+            </div>
+
+            <div class="form-satir">
+                <label for="english_level">İngilizce Seviyeniz</label>
+                <select id="english_level" name="english_level" required>
+                    <option value="" disabled selected>Seviye seçin</option>
+                    <option value="B1">B1 - Orta Düzey</option>
+                    <option value="B2">B2 - Orta Üstü</option>
+                    <option value="C1">C1 - İleri Düzey</option>
+                </select>
+            </div>
+
+            <div class="form-satir">
+                <label>Cinsiyet</label>
+                <div class="secenek-grup">
+                    <label><input type="radio" name="gender" value="male" checked> Erkek</label>
+                    <label><input type="radio" name="gender" value="female"> Kadın</label>
+                </div>
+            </div>
+
+            <div class="form-satir">
+                <label for="alan">İlgi Duyduğunuz Çalışma Alanları</label>
+                <textarea id="alan" name="section" rows="4" placeholder="Otonom sistemler, web geliştirme vb."></textarea>
+            </div>
+
+            <button type="submit">Bilgileri Kaydet</button>
+        </form>
+
+        <!-- javasc ile form gonderilince ozet kartini buraya basiyor -->
+        <div id="profil-ozet-alani"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Staj Bul App &middot; Tüm hakları saklıdır</p>
+    </footer>
+
+    <!-- hafta 3 jscrip -->
+    <script src="app.js"></script>
+</body>
+</html>
