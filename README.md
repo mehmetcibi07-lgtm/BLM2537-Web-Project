@@ -10,6 +10,7 @@ Bu proje; mühendislik öğrencileri ve yeni mezun adayların güncel staj, aday
 * **1. Hafta Videosu:** [Hafta01_MehmetCibi.mp4 İzleme Bağlantısı] (https://drive.google.com/file/d/18BsGVmNiwJD7rZ6Sqzt2eU1PfG1HtlVA/view?usp=drive_link)
 * **2. Hafta Videosu:** [Hafta02_MehmetCibi.mp4 İzleme Bağlantısı] 
 (https://drive.google.com/file/d/1qOeTlQUYPrO_aO2fJ5Ic1cBJxjYDbwLJ/view?usp=drive_link)
+* **3. Hafta Videosu:** [Hafta03_MehmetCibi.mp4 İzleme Bağlantısı] (https://drive.google.com/file/d/1N5f76bLAjQUV-m3jW1E8gBEVEtPA2StY/view?usp=drive_link)
 
 ---
 
