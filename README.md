@@ -1,8 +1,9 @@
 > [!NOTE]
-> **Özel Not:** Hafta 01 için Enver Hocamız tarihte esneklik gösterdi. 
+> **Özel Not:**  Hafta 01 için Enver Hocamız tarihte esneklik gösterdi.
+>  
 > Hafta 02 kodları son teslim saatinden yaklaşık 30-60 dk sonra github'a yüklendi...
->
-> 
+
+ 
 # Staj Bul - Web Sitesi Projesi
 **Ders:** BLM2537 Ağ Tabanlı Programlamaya Giriş  
 **Geliştirici:** Mehmet Cibi  
