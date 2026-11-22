@@ -3,6 +3,8 @@
 > Hafta 01 için Enver Hocamız tarihte esneklik gösterdi.
 > 
 > Hafta 02 kodları son teslim saatinden yaklaşık 30-60 dk sonra github'a yüklendi...
+>
+> Hafta 04 Videosu yüklenirken internet kesintisi yaşadım. Bundan doları 23 Kasım pazartesi tarihinde yüklenmiş olarak gözükebilir. (Video çekilirken sağ üstteki bikgisayar saati teyit için kontrol edilebilir.)
 
  
 # Staj Bul - Web Sitesi Projesi
