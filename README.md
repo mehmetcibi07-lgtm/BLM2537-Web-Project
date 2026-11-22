@@ -1,6 +1,7 @@
 > [!NOTE]
 > **Özel Not:**
-> Hafta 01 için Enver Hocamız tarihte esneklik gösterdi. 
+> Hafta 01 için Enver Hocamız tarihte esneklik gösterdi.
+> 
 > Hafta 02 kodları son teslim saatinden yaklaşık 30-60 dk sonra github'a yüklendi...
 
  
